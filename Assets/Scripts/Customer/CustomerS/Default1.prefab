@@ -711,8 +711,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CustomerVisual
   waitingSprite: {fileID: 21300000, guid: 6e4ef1a0d22905f43b6fd9ba301b82a5, type: 3}
-  talkingSprite: {fileID: 21300000, guid: a70c23a5e08ee9541a06ac2dd12be670, type: 3}
-  happySprite: {fileID: 21300000, guid: a70c23a5e08ee9541a06ac2dd12be670, type: 3}
+  talkingSprite: {fileID: 21300000, guid: e30a91b7ee5542143abc3eb50355c7fb, type: 3}
+  happySprite: {fileID: 21300000, guid: e30a91b7ee5542143abc3eb50355c7fb, type: 3}
   sadSprite: {fileID: 21300000, guid: 81bec40930f40cc48b9854456a51fe25, type: 3}
   spriteRenderer: {fileID: 9130248906387719577}
 --- !u!114 &2379562466519360973

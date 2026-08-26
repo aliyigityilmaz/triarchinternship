@@ -16,12 +16,18 @@ public class ItemBox : TooltipObject
     private void OnMouseDown()
     {
         if (item == null)
+        {
+            Debug.LogWarning(
+                $"ItemBox '{gameObject.name}' has no ItemData assigned."
+            );
+
             return;
+        }
 
         if (itemDragPrefab == null)
         {
             Debug.LogWarning(
-                $"No Item Drag Prefab assigned to {gameObject.name}"
+                $"ItemBox '{gameObject.name}' has no Item Drag Prefab assigned."
             );
 
             return;
@@ -50,8 +56,7 @@ public class ItemBox : TooltipObject
     {
         isDragging = true;
 
-        Vector3 mousePosition =
-            GetMouseWorldPosition();
+        Vector3 mousePosition = GetMouseWorldPosition();
 
         currentDraggedItem = Instantiate(
             itemDragPrefab,
@@ -70,6 +75,9 @@ public class ItemBox : TooltipObject
 
     private void UpdateDraggedItemPosition()
     {
+        if (currentDraggedItem == null)
+            return;
+
         currentDraggedItem.transform.position =
             GetMouseWorldPosition();
     }
@@ -106,7 +114,7 @@ public class ItemBox : TooltipObject
                 Input.mousePosition
             );
 
-        mousePosition.z = 0f;
+        mousePosition.z = transform.position.z;
 
         return mousePosition;
     }
@@ -114,7 +122,7 @@ public class ItemBox : TooltipObject
     public override string GetTooltipText()
     {
         if (item == null)
-            return string.Empty;
+            return "Unknown Item";
 
         return item.ItemName;
     }
