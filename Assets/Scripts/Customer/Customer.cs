@@ -45,6 +45,7 @@ public class Customer : MonoBehaviour
         isLeaving = false;
 
         visual.SetEmotion(CustomerEmotion.Waiting);
+        visual.ResetBasePosition();
 
         Vector3 targetPos = spawnPoint.transform.position;
         float side = Random.value < 0.5f ? -1f : 1f;
@@ -85,14 +86,9 @@ public class Customer : MonoBehaviour
 
     public void GiveItem(ItemData item)
     {
-        if (customerType != CustomerType.Default)
-            return;
-
-        if (isLeaving)
-            return;
-
-        if (item == null)
-            return;
+        if (customerType != CustomerType.Default) return;
+        if (isLeaving) return;
+        if (item == null) return;
 
         // WRONG ITEM
         if (item != requestedItem)
@@ -109,6 +105,8 @@ public class Customer : MonoBehaviour
             requestUI.SetQuantity(requestedQuantity);
         }
 
+        visual.PlayCorrectFeedback();
+
         // Still needs more
         if (requestedQuantity > 0)
         {
@@ -123,7 +121,7 @@ public class Customer : MonoBehaviour
     private void WrongItem()
     {
         visual.SetEmotion(CustomerEmotion.Sad);
-
+        visual.PlayWrongFeedback();
         Invoke(nameof(Leave), 0.5f);
     }
 
