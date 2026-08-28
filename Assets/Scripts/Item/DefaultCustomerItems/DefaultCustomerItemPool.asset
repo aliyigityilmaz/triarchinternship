@@ -13,15 +13,19 @@ MonoBehaviour:
   m_Name: DefaultCustomerItemPool
   m_EditorClassIdentifier: Assembly-CSharp::DefaultCustomerItemPool
   items:
-  - item: {fileID: 11400000, guid: 5dfaccf622ac09d46b4c25eacb4e0778, type: 2}
+  - item: {fileID: 11400000, guid: eb6c30a7dc91380478392418f08607ee, type: 2}
     minimumRequest: 1
     maximumRequest: 3
     weight: 1
-  - item: {fileID: 11400000, guid: 3c2852e8143f73a4ea38132ec6b889da, type: 2}
+  - item: {fileID: 11400000, guid: 702c5bd9f62e497439b2f3afed0038e9, type: 2}
     minimumRequest: 1
     maximumRequest: 3
     weight: 1
-  - item: {fileID: 11400000, guid: addbbf28e05b7a743a82ec079b7e8bc7, type: 2}
+  - item: {fileID: 11400000, guid: 3c32ba233318ea24f832c2bbe9e6b0f5, type: 2}
+    minimumRequest: 1
+    maximumRequest: 3
+    weight: 1
+  - item: {fileID: 11400000, guid: ec07db768aa29244994dec49284e8ec5, type: 2}
     minimumRequest: 1
     maximumRequest: 3
     weight: 1

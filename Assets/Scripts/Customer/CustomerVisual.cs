@@ -49,4 +49,12 @@ public class CustomerVisual : MonoBehaviour
     {
         return currentEmotion;
     }
+
+    public void SetAlpha(float alpha)
+    {
+        if (spriteRenderer == null) return;
+        Color c = spriteRenderer.color;
+        c.a = alpha;
+        spriteRenderer.color = c;
+    }
 }

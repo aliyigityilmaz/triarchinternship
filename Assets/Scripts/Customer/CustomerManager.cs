@@ -334,31 +334,12 @@ public class CustomerManager : MonoBehaviour
 
     public void CustomerLeaving(Customer customer)
     {
-        if (customer == null)
-            return;
+        if (customer == null) return;
 
-        if (customer.transform == null)
-            return;
-
-        CustomerSpawnPoint point = null;
-
-        foreach (CustomerSpawnPoint spawnPoint in spawnPoints)
-        {
-            if (Vector2.Distance(
-                spawnPoint.transform.position,
-                customer.transform.position
-            ) < 0.1f)
-            {
-                point = spawnPoint;
-                break;
-            }
-        }
-
-        if (point != null)
-            point.SetOccupied(false);
+        CustomerSpawnPoint point = customer.CurrentSpawnPoint;
+        if (point != null) point.SetOccupied(false);
 
         activeCustomers.Remove(customer);
-
         Destroy(customer.gameObject);
     }
 
