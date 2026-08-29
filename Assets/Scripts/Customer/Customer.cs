@@ -17,6 +17,16 @@ public class Customer : MonoBehaviour
     [SerializeField] private float leaveDuration = 0.35f;
     [SerializeField] private AnimationCurve moveCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
 
+    [Header("Emotion Popups")]
+    [SerializeField] private Transform emotionSpawnPoint;
+
+    [SerializeField] private GameObject angerEmotionPrefab;
+    [SerializeField] private GameObject happyEmotionPrefab;
+    [SerializeField] private GameObject heartEmotionPrefab;
+    [SerializeField] private GameObject tearEmotionPrefab;
+    [SerializeField] private GameObject thumbsUpEmotionPrefab;
+    [SerializeField] private GameObject worryEmotionPrefab;
+
     private Coroutine animationRoutine;
 
     private CustomerSpawnPoint currentSpawnPoint;
@@ -121,14 +131,18 @@ public class Customer : MonoBehaviour
     private void WrongItem()
     {
         visual.SetEmotion(CustomerEmotion.Sad);
+
+        SpawnEmotion(CustomerPopupEmotion.Anger);
+
         visual.PlayWrongFeedback();
+
         Invoke(nameof(Leave), 0.5f);
     }
 
     private void CompleteRequest()
     {
         visual.SetEmotion(CustomerEmotion.Happy);
-
+        SpawnEmotion(CustomerPopupEmotion.Happy);
         if (customerManager != null)
         {
             customerManager.PayDefaultCustomer(this);
@@ -190,5 +204,49 @@ public class Customer : MonoBehaviour
 
         transform.position = to;
         visual.SetAlpha(toAlpha);
+    }
+
+    public void SpawnEmotion(CustomerPopupEmotion emotion)
+    {
+        if (emotionSpawnPoint == null)
+            return;
+
+        GameObject prefab = null;
+
+        switch (emotion)
+        {
+            case CustomerPopupEmotion.Anger:
+                prefab = angerEmotionPrefab;
+                break;
+
+            case CustomerPopupEmotion.Happy:
+                prefab = happyEmotionPrefab;
+                break;
+
+            case CustomerPopupEmotion.Heart:
+                prefab = heartEmotionPrefab;
+                break;
+
+            case CustomerPopupEmotion.Tear:
+                prefab = tearEmotionPrefab;
+                break;
+
+            case CustomerPopupEmotion.ThumbsUp:
+                prefab = thumbsUpEmotionPrefab;
+                break;
+
+            case CustomerPopupEmotion.Worry:
+                prefab = worryEmotionPrefab;
+                break;
+        }
+
+        if (prefab == null)
+            return;
+
+        Instantiate(
+            prefab,
+            emotionSpawnPoint.position,
+            Quaternion.identity
+        );
     }
 }

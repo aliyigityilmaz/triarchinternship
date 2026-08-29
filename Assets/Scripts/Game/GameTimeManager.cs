@@ -7,8 +7,7 @@ public class GameTimeManager : MonoBehaviour
 
     [Header("Day Settings")]
     [SerializeField] private int startingDay = 1;
-
-    [SerializeField] private float dayDurationInSeconds = 240f; // 4 minutes
+    [SerializeField] private float dayDurationInSeconds = 240f;
 
     [Header("Working Hours")]
     [SerializeField] private int startHour = 9;
@@ -21,6 +20,7 @@ public class GameTimeManager : MonoBehaviour
     public bool IsDayFinished { get; private set; }
 
     public int CurrentHour => Mathf.FloorToInt(CurrentTime);
+
     public int CurrentMinute =>
         Mathf.FloorToInt((CurrentTime - CurrentHour) * 60f);
 
@@ -38,6 +38,7 @@ public class GameTimeManager : MonoBehaviour
     public event Action OnDayStarted;
     public event Action OnDayFinished;
     public event Action<int> OnDayChanged;
+    public event Action<float> OnTimeChanged;
 
     private void Awake()
     {
@@ -52,7 +53,7 @@ public class GameTimeManager : MonoBehaviour
 
     private void Start()
     {
-        StartNewDay();
+        InitializeFirstDay();
     }
 
     private void Update()
@@ -60,7 +61,11 @@ public class GameTimeManager : MonoBehaviour
         if (!IsDayActive)
             return;
 
-        CurrentTime += Time.deltaTime * (endHour - startHour) / dayDurationInSeconds;
+        CurrentTime += Time.deltaTime *
+                       (endHour - startHour) /
+                       dayDurationInSeconds;
+
+        OnTimeChanged?.Invoke(CurrentTime);
 
         if (CurrentTime >= endHour)
         {
@@ -69,7 +74,7 @@ public class GameTimeManager : MonoBehaviour
         }
     }
 
-    private void StartNewDay()
+    private void InitializeFirstDay()
     {
         CurrentDay = startingDay;
         CurrentTime = startHour;
@@ -79,6 +84,7 @@ public class GameTimeManager : MonoBehaviour
 
         OnDayStarted?.Invoke();
         OnDayChanged?.Invoke(CurrentDay);
+        OnTimeChanged?.Invoke(CurrentTime);
     }
 
     private void FinishDay()
@@ -91,6 +97,7 @@ public class GameTimeManager : MonoBehaviour
 
         CurrentTime = endHour;
 
+        OnTimeChanged?.Invoke(CurrentTime);
         OnDayFinished?.Invoke();
     }
 
@@ -112,13 +119,16 @@ public class GameTimeManager : MonoBehaviour
 
         OnDayStarted?.Invoke();
         OnDayChanged?.Invoke(CurrentDay);
+        OnTimeChanged?.Invoke(CurrentTime);
     }
 
     public string GetFormattedTime()
     {
-        int hour = CurrentHour;
-        int minute = CurrentMinute;
+        return $"{CurrentHour:00}:{CurrentMinute:00}";
+    }
 
-        return $"{hour:00}:{minute:00}";
+    public string GetFormattedDay()
+    {
+        return $"Day {CurrentDay}";
     }
 }

@@ -680,6 +680,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children:
+  - {fileID: 8888876932981496905}
   - {fileID: 3507162412155200038}
   - {fileID: 6601339787359181767}
   m_Father: {fileID: 0}
@@ -698,6 +699,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Customer
   visual: {fileID: 2109994198688224670}
   requestUI: {fileID: 6904368461466073952}
+  spawnMoveDistance: 2
+  spawnDuration: 0.35
+  leaveMoveDistance: 2
+  leaveDuration: 0.35
+  moveCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  emotionSpawnPoint: {fileID: 8888876932981496905}
+  angerEmotionPrefab: {fileID: 6019644959190123445, guid: 03ec8f6b2486bc542a5b8826829adb6a, type: 3}
+  happyEmotionPrefab: {fileID: 7267367293279932761, guid: 9eb21f903ae36c24489e8352db847cfe, type: 3}
+  heartEmotionPrefab: {fileID: 8045719220962670954, guid: d00f432e12bb0bc46a3815fd618c2e40, type: 3}
+  tearEmotionPrefab: {fileID: 7070164775689855776, guid: 709c7719cbfd32242948f8e14f328a6a, type: 3}
+  thumbsUpEmotionPrefab: {fileID: 4153536896322069820, guid: 86a80aa36c6fe2048b06c67899d555bc, type: 3}
+  worryEmotionPrefab: {fileID: 6532151390534283277, guid: 6ce76bd9758b63948a538581c3a7219d, type: 3}
 --- !u!114 &2109994198688224670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -715,6 +751,11 @@ MonoBehaviour:
   happySprite: {fileID: 21300000, guid: 95588520d7fb8c54097408cd0ec56e6f, type: 3}
   sadSprite: {fileID: 21300000, guid: 703c6b0bd24d7104b88c843c0e91c9cd, type: 3}
   spriteRenderer: {fileID: 9130248906387719577}
+  bounceHeight: 0.25
+  bounceDuration: 0.25
+  shakeStrength: 0.15
+  shakeDuration: 0.25
+  shakeVibrato: 6
 --- !u!114 &6904368461466073952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -775,3 +816,34 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5.1871033, y: 8.998182}
   m_EdgeRadius: 0
+--- !u!1 &9077016078983144424
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8888876932981496905}
+  m_Layer: 0
+  m_Name: EmotionPopupSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8888876932981496905
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9077016078983144424}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2, y: 2.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2406627875139186571}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
