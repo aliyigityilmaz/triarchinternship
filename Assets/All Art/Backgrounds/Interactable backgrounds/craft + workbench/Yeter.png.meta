@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 663e103239651684d9ac639582b52301
+guid: 514ceb789927e1148ac4a004ca1f5d9f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7828203748593990235
-    second: Microphone_stable_bg_0
+      213: 1475291487019815160
+    second: Yeter_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,43 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Microphone_stable_bg_0
+      name: Yeter_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 11
-        width: 539
-        height: 1773
+        x: 0
+        y: 0
+        width: 3895
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b5a735075dd53ac60800000000000000
-      internalID: 7828203748593990235
+      spriteID: 8f059ff7ac9497410800000000000000
+      internalID: 1475291487019815160
       vertices: []
       indices: 
       edges: []
@@ -161,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Microphone_stable_bg_0: 7828203748593990235
+      Yeter_0: 1475291487019815160
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
