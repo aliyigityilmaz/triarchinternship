@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 9e47bf208a5aca345b429ebe11fbd7d7
+guid: b4f3e380efb768849899518df0f7cc1d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6935058362636752844
-    second: Items_Fan_Umbrella_Musicbox_Coggs_0
-  - first:
-      213: -8388307758144307819
-    second: Items_Fan_Umbrella_Musicbox_Coggs_1
-  - first:
-      213: 2676699895353124136
-    second: Items_Fan_Umbrella_Musicbox_Coggs_2
-  - first:
-      213: -4933254268295473320
-    second: Items_Fan_Umbrella_Musicbox_Coggs_3
+      213: 1149507813878298526
+    second: Wbcrft_bg_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -109,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Items_Fan_Umbrella_Musicbox_Coggs_0
+      name: Wbcrft_bg_0
       rect:
         serializedVersion: 2
-        x: 51
-        y: 641
-        width: 485
-        height: 352
+        x: 0
+        y: 0
+        width: 3895
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,74 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4382f66a929b1cf90800000000000000
-      internalID: -6935058362636752844
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Items_Fan_Umbrella_Musicbox_Coggs_1
-      rect:
-        serializedVersion: 2
-        x: 720
-        y: 664
-        width: 662
-        height: 299
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 59db721898eb69b80800000000000000
-      internalID: -8388307758144307819
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Items_Fan_Umbrella_Musicbox_Coggs_2
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 128
-        width: 554
-        height: 303
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 82529d08f5c852520800000000000000
-      internalID: 2676699895353124136
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Items_Fan_Umbrella_Musicbox_Coggs_3
-      rect:
-        serializedVersion: 2
-        x: 814
-        y: 95
-        width: 494
-        height: 426
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8579197616f898bb0800000000000000
-      internalID: -4933254268295473320
+      spriteID: e9770c0344fd3ff00800000000000000
+      internalID: 1149507813878298526
       vertices: []
       indices: 
       edges: []
@@ -200,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -210,10 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Items_Fan_Umbrella_Musicbox_Coggs_0: -6935058362636752844
-      Items_Fan_Umbrella_Musicbox_Coggs_1: -8388307758144307819
-      Items_Fan_Umbrella_Musicbox_Coggs_2: 2676699895353124136
-      Items_Fan_Umbrella_Musicbox_Coggs_3: -4933254268295473320
+      Wbcrft_bg_0: 1149507813878298526
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
