@@ -136,10 +136,10 @@ TextureImporter:
       name: Items_Gems_Coggs_0
       rect:
         serializedVersion: 2
-        x: 78
-        y: 786
-        width: 128
-        height: 187
+        x: 35
+        y: 784
+        width: 190
+        height: 190
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,10 +158,10 @@ TextureImporter:
       name: Items_Gems_Coggs_2
       rect:
         serializedVersion: 2
-        x: 247
+        x: 206
         y: 764
-        width: 124
-        height: 217
+        width: 220
+        height: 220
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,10 +246,10 @@ TextureImporter:
       name: Items_Gems_Coggs_6
       rect:
         serializedVersion: 2
-        x: 37
-        y: 459
-        width: 163
-        height: 247
+        x: 0
+        y: 457
+        width: 250
+        height: 250
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,10 +268,10 @@ TextureImporter:
       name: Items_Gems_Coggs_7
       rect:
         serializedVersion: 2
-        x: 262
-        y: 509
-        width: 104
-        height: 179
+        x: 225
+        y: 507
+        width: 185
+        height: 185
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,9 +313,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 78
-        width: 385
-        height: 305
+        y: 48
+        width: 390
+        height: 390
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -335,9 +335,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 509
-        y: 90
+        y: 67
         width: 350
-        height: 309
+        height: 350
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -357,9 +357,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 947
-        y: 80
-        width: 391
-        height: 318
+        y: 40
+        width: 400
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

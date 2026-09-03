@@ -109,12 +109,12 @@ TextureImporter:
       name: Items_Goggles_Pen_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 56
-        width: 547
-        height: 291
+        x: 15
+        y: 0
+        width: 555
+        height: 399
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -131,12 +131,12 @@ TextureImporter:
       name: Items_Goggles_Pen_1
       rect:
         serializedVersion: 2
-        x: 752
-        y: 50
-        width: 265
-        height: 308
+        x: 710
+        y: 44
+        width: 320
+        height: 320
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -153,12 +153,12 @@ TextureImporter:
       name: Items_Goggles_Pen_2
       rect:
         serializedVersion: 2
-        x: 1053
-        y: 39
-        width: 281
-        height: 327
+        x: 1025
+        y: 38
+        width: 330
+        height: 330
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -175,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a2c96345db6631b4f996023ae2bfc977
     internalID: 0
     vertices: []
     indices: 

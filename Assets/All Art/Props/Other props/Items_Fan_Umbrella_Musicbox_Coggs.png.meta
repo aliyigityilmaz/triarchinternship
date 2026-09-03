@@ -112,12 +112,12 @@ TextureImporter:
       name: Items_Fan_Umbrella_Musicbox_Coggs_0
       rect:
         serializedVersion: 2
-        x: 51
-        y: 641
-        width: 485
-        height: 352
+        x: 46
+        y: 569
+        width: 490
+        height: 490
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -134,12 +134,12 @@ TextureImporter:
       name: Items_Fan_Umbrella_Musicbox_Coggs_1
       rect:
         serializedVersion: 2
-        x: 720
-        y: 664
-        width: 662
-        height: 299
+        x: 717
+        y: 548
+        width: 670
+        height: 532
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -156,12 +156,12 @@ TextureImporter:
       name: Items_Fan_Umbrella_Musicbox_Coggs_2
       rect:
         serializedVersion: 2
-        x: 52
-        y: 128
-        width: 554
-        height: 303
+        x: 50
+        y: 0
+        width: 560
+        height: 560
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -178,12 +178,12 @@ TextureImporter:
       name: Items_Fan_Umbrella_Musicbox_Coggs_3
       rect:
         serializedVersion: 2
-        x: 814
-        y: 95
-        width: 494
-        height: 426
+        x: 807
+        y: 65
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -200,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 990f7b8562ac10d4f8b7e10e531ac766
     internalID: 0
     vertices: []
     indices: 
@@ -214,6 +214,7 @@ TextureImporter:
       Items_Fan_Umbrella_Musicbox_Coggs_1: -8388307758144307819
       Items_Fan_Umbrella_Musicbox_Coggs_2: 2676699895353124136
       Items_Fan_Umbrella_Musicbox_Coggs_3: -4933254268295473320
+      Items_Fan_Umbrella_Musicbox_Coggs_4: -724901775
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
