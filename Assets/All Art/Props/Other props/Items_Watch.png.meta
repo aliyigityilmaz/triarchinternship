@@ -5,6 +5,9 @@ TextureImporter:
   - first:
       213: 2888694392945184840
     second: Items_Watch_0
+  - first:
+      213: 8155845536910030417
+    second: Items_Watch_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,10 +106,10 @@ TextureImporter:
       name: Items_Watch_0
       rect:
         serializedVersion: 2
-        x: 102
-        y: 131
-        width: 470
-        height: 470
+        x: 105
+        y: 125
+        width: 480
+        height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,11 +124,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Items_Watch_Shelf
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 130
+        width: 267
+        height: 380
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1563a76ed426f2170800000000000000
+      internalID: 8155845536910030417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 1dee8dd2b9a2c964ca4bfbeb8131248a
+    spriteID: 6af1dea77eb4d2c47a7f6127f32308cb
     internalID: 0
     vertices: []
     indices: 
@@ -136,6 +161,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Items_Watch_0: 2888694392945184840
+      Items_Watch_Shelf: 8155845536910030417
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
